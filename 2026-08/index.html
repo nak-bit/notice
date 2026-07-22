@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026年8月 Camp 参加受付開始！ | ホリエモンAI学校</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --brand: #1a1a2e; --accent: #e94560; --accent2: #0f3460;
+      --gold: #f5a623; --surface: #16213e; --card: #1e2d4a;
+      --text: #e8eaf6; --muted: #9ea7c4; --radius: 14px;
+    }
+    body {
+      font-family: 'Hiragino Kaku Gothic ProN','Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif;
+      background: var(--brand); color: var(--text); min-height: 100vh; line-height: 1.7;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0f3460 0%, #1a1a2e 50%, #16213e 100%);
+      padding: 60px 20px 50px; text-align: center; position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 60% 20%, rgba(233,69,96,0.18) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .hero-badge {
+      display: inline-block; background: var(--accent); color: #fff;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.12em;
+      padding: 5px 18px; border-radius: 999px; margin-bottom: 20px;
+    }
+    .hero h1 { font-size: clamp(1.6rem,5vw,2.8rem); font-weight: 900; line-height: 1.3; margin-bottom: 12px; }
+    .hero h1 span { color: var(--gold); }
+    .hero-sub { font-size: clamp(0.95rem,2.5vw,1.1rem); color: var(--muted); max-width: 560px; margin: 0 auto; }
+    .info-strip {
+      display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 20px; padding: 32px 20px; background: var(--surface);
+    }
+    .info-chip {
+      display: flex; align-items: center; gap: 10px;
+      background: var(--card); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 999px; padding: 12px 28px; font-size: 0.95rem;
+    }
+    .info-chip .icon { font-size: 1.1rem; }
+    .info-chip strong { color: var(--gold); }
+    .hero-image-wrap {
+      background: var(--surface); padding: 0 20px 40px; text-align: center;
+    }
+    .hero-image-wrap img {
+      width: 100%; max-width: 860px; border-radius: 16px;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4); display: block; margin: 0 auto;
+    }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+    .section { padding: 48px 16px; }
+    .section + .section { padding-top: 0; }
+    .section-title { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .section-title .icon-box {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; flex-shrink: 0;
+    }
+    .section-title h2 { font-size: clamp(1.1rem,3vw,1.4rem); font-weight: 800; }
+    .course-card {
+      background: var(--card); border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--radius); overflow: hidden; margin-bottom: 24px;
+    }
+    .course-header {
+      padding: 18px 22px 14px; border-bottom: 1px solid rgba(255,255,255,0.07);
+      display: flex; align-items: flex-start; gap: 14px;
+    }
+    .course-emoji { font-size: 2rem; line-height: 1; }
+    .course-title { font-size: 1.1rem; font-weight: 800; margin-bottom: 4px; }
+    .course-note {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.78rem; background: rgba(233,69,96,0.18); color: #ff8fa3;
+      border: 1px solid rgba(233,69,96,0.3); border-radius: 6px; padding: 3px 10px;
+    }
+    .session-row {
+      display: flex; align-items: center; gap: 12px;
+      padding: 14px 22px; border-bottom: 1px solid rgba(255,255,255,0.05); flex-wrap: wrap;
+    }
+    .session-row:last-child { border-bottom: none; }
+    .session-date { font-weight: 700; font-size: 0.95rem; min-width: 180px; }
+    .session-date .weekday { color: var(--muted); font-weight: 400; font-size: 0.85rem; margin-left: 4px; }
+    .capacity-badge {
+      font-size: 0.75rem; background: rgba(245,166,35,0.15); color: var(--gold);
+      border: 1px solid rgba(245,166,35,0.3); border-radius: 6px; padding: 2px 10px; white-space: nowrap;
+    }
+    .apply-btn {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--accent); color: #fff; text-decoration: none;
+      font-weight: 700; font-size: 0.82rem; padding: 8px 18px;
+      border-radius: 8px; margin-left: auto; transition: opacity 0.15s, transform 0.1s; white-space: nowrap;
+    }
+    .apply-btn:hover { opacity: 0.88; transform: translateY(-1px); }
+    .flow-steps {
+      background: var(--card); border: 1px solid rgba(255,255,255,0.07);
+      border-radius: var(--radius); overflow: hidden;
+    }
+    .flow-step {
+      display: flex; align-items: flex-start; gap: 16px;
+      padding: 20px 22px; border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .flow-step:last-child { border-bottom: none; }
+    .step-num {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--accent2); border: 2px solid var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 900; font-size: 0.85rem; color: var(--accent); flex-shrink: 0; margin-top: 2px;
+    }
+    .step-body strong { display: block; font-size: 0.95rem; margin-bottom: 3px; }
+    .step-body p { font-size: 0.87rem; color: var(--muted); }
+    footer {
+      background: var(--surface); text-align: center; padding: 32px 20px;
+      color: var(--muted); font-size: 0.82rem; border-top: 1px solid rgba(255,255,255,0.06);
+    }
+    .course-info {
+      display: inline-flex; align-items: center; gap: 5px; margin-top: 6px;
+      font-size: 0.78rem; background: rgba(255,255,255,0.05); color: var(--muted);
+      border: 1px solid rgba(255,255,255,0.1); border-radius: 6px; padding: 3px 10px;
+    }
+    .session-row.ended {
+      opacity: 0.45;
+      background: rgba(0,0,0,0.15);
+    }
+    .session-row.ended .session-date {
+      text-decoration: line-through;
+      color: var(--muted);
+    }
+    .session-row.ended .format-badge {
+      text-decoration: line-through;
+    }
+    .ended-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.8rem; background: rgba(255,255,255,0.05); color: var(--muted);
+      border: 1px solid rgba(255,255,255,0.12); border-radius: 8px;
+      padding: 7px 16px; margin-left: auto; white-space: nowrap; font-weight: 600;
+    }    .format-badge {
+      font-size: 0.75rem; border-radius: 6px; padding: 2px 10px; white-space: nowrap;
+      border: 1px solid; font-weight: 600;
+    }
+    .format-badge.online {
+      background: rgba(15,52,96,0.3); color: #7eb8f7; border-color: rgba(126,184,247,0.3);
+    }
+    .format-badge.offline {
+      background: rgba(245,166,35,0.12); color: var(--gold); border-color: rgba(245,166,35,0.3);
+    }    @media (max-width: 520px) {
+      .session-row { gap: 8px; }
+      .apply-btn { margin-left: 0; }
+      .session-date { min-width: unset; width: 100%; }
+    }
+  </style>
+<!-- v20260722094953 -->
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">🎉 参加受付開始</div>
+  <h1>2026年<span>8月</span>開催<br>各種Campのご案内</h1>
+  <p class="hero-sub">ホリエモンAI学校の受講者向けCampプログラム。<br>受講者は無料でご参加いただけます。</p>
+</div>
+
+<div class="info-strip">
+  <div class="info-chip"><span class="icon">🎓</span><span>対象：<strong>ホリエモンAI学校 受講者</strong></span></div>
+  <div class="info-chip"><span class="icon">¥</span><span>受講費：<strong>無料</strong></span></div>
+</div>
+
+<div class="hero-image-wrap">
+  <img src="hero.png" alt="2026年8月度 Camp AI・ITスキルアップ研修ガイド">
+</div>
+
+<div class="container">
+  <div class="section">
+    <div class="section-title">
+      <div class="icon-box" style="background:rgba(15,52,96,0.6);border:1px solid rgba(255,255,255,0.1);">📋</div>
+      <h2>お申し込みの流れ</h2>
+    </div>
+    <div class="flow-steps">
+      <div class="flow-step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>受講したいCampの申し込みフォームを開く</strong>
+          <p>下記の各コースから日程を選んで「申し込む」ボタンをクリックしてください。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>フォームに必要事項を入力して送信</strong>
+          <p>必要情報を入力し、送信してください。</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>完了画面のURLよりCampチャットグループへ参加</strong>
+          <p>お申し込み完了後、完了画面に表示されるURLよりCamp用チャットグループへご参加ください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div class="section-title">
+      <div class="icon-box" style="background:rgba(233,69,96,0.15);border:1px solid rgba(233,69,96,0.2);">📚</div>
+      <h2>Campコース一覧</h2>
+    </div>
+
+    <div class="course-card">
+      <div class="course-header">
+        <div class="course-emoji">🤖</div>
+        <div>
+          <div class="course-title">Camp Claude Cowork &amp; Code 編</div>
+          <span class="course-note">⚠️ 参加条件あり：ツール代 $20 課金が必要です</span>
+        </div>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月4日<span class="weekday">（火）</span> 9:00〜18:00</div>
+        <span class="format-badge online">💻 オンライン</span>
+        <a class="apply-btn" href="https://forms.gle/Kk2yimZj3e5GL2xt5" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月5日<span class="weekday">（水）</span> 9:00〜18:00</div>
+        <span class="format-badge online">💻 オンライン</span>
+        <a class="apply-btn" href="https://forms.gle/bZnJpEUArCwxR9kB7" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月8日<span class="weekday">（土）</span> 9:00〜18:00</div>
+        <span class="format-badge online">💻 オンライン</span>
+        <a class="apply-btn" href="https://forms.gle/ddskHF9M7JboxH5Z8" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月18日<span class="weekday">（火）</span> 9:00〜18:00</div>
+        <span class="format-badge offline">🏢 対面</span>
+        <a class="apply-btn" href="https://forms.gle/MFzhZdEVtVqWoLgN6" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月22日<span class="weekday">（土）</span> 9:00〜18:00</div>
+        <span class="format-badge offline">🏢 対面</span>
+        <a class="apply-btn" href="https://forms.gle/5kjZmmo8erac8NfJ9" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月25日<span class="weekday">（火）</span> 9:00〜18:00</div>
+        <span class="format-badge online">💻 オンライン</span>
+        <a class="apply-btn" href="https://forms.gle/jk5hmbx1X1GYmsh39" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-header">
+        <div class="course-emoji">⚡</div>
+        <div><div class="course-title">Camp Zapier 編</div></div>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月18日<span class="weekday">（火）</span> 9:00〜18:00</div>
+        <span class="format-badge online">💻 オンライン</span>
+        <span class="capacity-badge">定員 10名</span>
+        <a class="apply-btn" href="https://forms.gle/hhAnHoL8oTsNuDdFA" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-header">
+        <div class="course-emoji">🪟</div>
+        <div>
+          <div class="course-title">Camp Microsoft の AI ツール基礎編</div>
+          <span class="course-note">⚠️ 参加条件あり：詳細は申し込みフォームをご確認ください</span>
+        </div>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月27日<span class="weekday">（木）</span> 11:00〜12:00</div>
+        <span class="format-badge online">💻 オンライン</span>
+        <span class="capacity-badge">定員 10名</span>
+        <a class="apply-btn" href="https://forms.gle/6Ds6ZR5Lbu6fwoMn7" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-header">
+        <div class="course-emoji">🔍</div>
+        <div><div class="course-title">Camp Google の AI ツール基礎編</div></div>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月8日<span class="weekday">（土）</span> 9:00〜13:00</div>
+        <span class="format-badge online">💻 オンライン</span>
+        <span class="capacity-badge">定員 10名</span>
+        <a class="apply-btn" href="https://forms.gle/1PE6cCGrwubZiZN17" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月21日<span class="weekday">（金）</span> 13:00〜17:00</div>
+        <span class="format-badge online">💻 オンライン</span>
+        <span class="capacity-badge">定員 10名</span>
+        <a class="apply-btn" href="https://forms.gle/59nJs3bEXevBhyYd6" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+    </div>
+
+    <div class="course-card">
+      <div class="course-header">
+        <div class="course-emoji">💡</div>
+        <div><div class="course-title">Camp パソコンの基礎編</div></div>
+      </div>
+      <div class="session-row">
+        <div class="session-date">8月27日<span class="weekday">（木）</span> 13:00〜16:00</div>
+        <span class="format-badge online">💻 オンライン</span>
+        <span class="capacity-badge">定員 8名</span>
+        <a class="apply-btn" href="https://forms.gle/W9NVcai8vCnimGtNA" target="_blank" rel="noopener">申し込む →</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>皆さまのご参加を心よりお待ちしております！</p>
+  <p style="margin-top:12px;">ホリエモンAI学校</p>
+</footer>
+
+</body>
+</html>
